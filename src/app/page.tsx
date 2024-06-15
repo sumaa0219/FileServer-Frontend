@@ -139,7 +139,7 @@ const Home = () => {
   const { getRootProps, getInputProps } = useDropzone({ onDrop });
 
   const handleDirectoryClick = (directoryName: string) => {
-    const newDir = `${dir}/${directoryName}`;
+    const newDir = `${dir}${directoryName}`;
     console.log('Navigating to:', newDir);
     router.push(newDir);
   };
